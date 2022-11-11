@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="title" id="header-title">
+            <h1>Vaccination</h1>
+        </div>
+        <div class="right-header">
+            <a href="#" class="anchor">Database</a>
+            <a href="#" class="anchor">Education</a>
+            <a href="#" class="anchor">News</a>
+            <a href="#" class="anchor">Regulation</a>
+            <div class="hoax-a-container">
+                <a href="#" class="hoax-a">Hoax Buster</a>
+            </div>
+        </div>
+    </header>
+    <section class="section-container" id="section-1">
+        <div class="left-section" id="left-section-1">
+            <h1 class="section-title" id="section-1-title">Fight Virus With Vaccines</h1>
+            <p class="section-paragraph">Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
+            <!--This is an icon but bruh, that's what i gain for not installing bootstrap *skull emoji*-->
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                </svg>
+                <p>Best Protection</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <p>Selected Vaccines</p>
+            </div>
+            <label for="vacc-form" class="vacc-schedule-container">
+                <div class="small-icon-container" id="vacc-schedule-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill small-icon" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    </svg>
+                </div>
+                <h5 class="vacc-schedule-title">Schedule your vaccinations</h5>
+            </label> 
+        </div>
+
+        <div class="right-section" id="right-section-1">
+            <img src="./img/Sin título-1.png" alt="nurse with a vaccine" id="section-1-img">
+        </div>
+
+        <form action="#" class="vacc-form" id="vacc-form" name="vacc-form">
+            <div id="vacc-form-container">
+                <div id="location-form" class="form-input-container">
+                    <div class="small-icon-container form-label-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill small-icon" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                    </div>
+                    <label for="location" class="form-label">
+                      <p class="form-p">Location</p>
+                    </label>
+                    <select name="location" id="location" class="form-input">
+                        <option value="Jakarta Utara">Jakarta Utara</option>
+                        <option value="Mexico City">Mexico City</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Monterrey">Monterrey</option>
+                    </select>
+                </div>
+    
+                <div id="date-form" class="form-input-container">
+                    <div class="small-icon-container form-label-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week-fill small-icon" viewBox="0 0 16 16">
+                            <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zM2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                    </div>
+                    <label for="date" class="form-label">                   
+                        <p class="form-p">Date</p>
+                    </label>
+                    <input type="date" id="date" name="date" class="form-input" required>    
+                </div>   
+                
+                <div id="type-form" class="form-input-container">
+                    <div class="small-icon-container form-label-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill small-icon" viewBox="0 0 16 16">
+                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
+                        </svg>
+                    </div>
+                    <label for="type" class="form-label">
+                        <p class="form-p">Vaccine type</p>
+                    </label>
+                    <select name="type" id="type" class="form-input">
+                        <option value="Moderna">Moderna</option>
+                        <option value="Astra Zeneca">Astra Zeneca</option>
+                        <option value="Pfizer">Pfizer</option>
+                        <option value="Sinovac">Sinovac</option>
+                        <option value="Sputnik V">Sputnik V</option>
+                    </select>
+                </div>   
+                <button type="submit" class="form-input-container" id="vacc-form-btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <img src="./img/NewCanvas3.jpg" alt="Marcas de vacuna" id="vacc-img">
+
+    <section class="section-container" id="wdi-section">
+        <div id="wdi-info">
+            <h2 class="section-title" id="wdi-title">Why should I vaccine?</h2>
+            <p class="section-paragraph" id="wdi-p">In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:</p>
+        </div> 
+        <div id="wdi-cards">
+            <div class="wdi-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders card-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                </svg>
+                <h3 class="card-title">Minimize the spread of viruses</h3>
+                <p class="card-text">vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+            </div>
+            <div class="wdi-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-check card-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                </svg>
+                <h3 class="card-title">Forming antibodies</h3>
+                <p class="card-text">COVID-19 vaccine proven to help shape antibody response for inmune system</p>
+            </div>
+            <div class="wdi-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill card-icon" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                </svg>
+                <h3 class="card-title">Protecting people nearby</h3>
+                <p class="card-text">The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
+            </div>
+            <div class="wdi-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up card-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
+                </svg>
+                <h3 class="card-title">Creating group immunity</h3>
+                <p class="card-text">COVID-19 vaccine is also beneficial for creating group immunity or herd immunity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-container" id="section-3">
+        <div id="left-section-3" class="left-section">
+            <img src="./img/section-3-img.jpg" alt="girl with a facemask">
+        </div>
+        <div id="right-section-3" class="right-section">
+            <div id="section-3-head">
+                <h2 class="section-title" id="section-3-title">Preparations Before Vaccine</h2>
+                <p class="section-paragraph" id="section-3-p">The success of vaccines is strongly influenced by the strength of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
+            </div>
+            <div id="prep-cards">
+                <div class="prep-card" id="prep-card-1">
+                    <div class="small-icon-container prep-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-x" viewBox="0 0 16 16">
+                            <path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zM6.854 5.146 8 6.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 7l1.147 1.146a.5.5 0 0 1-.708.708L8 7.707 6.854 8.854a.5.5 0 1 1-.708-.708L7.293 7 6.146 5.854a.5.5 0 1 1 .708-.708z"/>
+                        </svg>
+                    </div>
+                    <h4 class="prep-card-title">Avoid alcoholic beverages</h4>
+                    <button class="prep-btn"><!--TODO: there is going to be some JS, for now, keep empty-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z">
+                        </svg>
+                    </button>
+                </div>
+                <div class="prep-card" id="prep-card-2">
+                    <div class="small-icon-container prep-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+                        </svg>
+                    </div>
+                    <h4 class="prep-card-title">Avoid stress</h4>
+                    <button class="prep-btn"><!--TODO: there is going to be some JS, for now, keep empty-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="prep-card" id="prep-card-3">
+                    <div class="small-icon-container prep-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                            <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+                        </svg>
+                    </div>
+                    <h4 class="prep-card-title">Eat healthy food</h4>
+                    <button class="prep-btn"><!--TODO: there is going to be some JS, for now, keep empty-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="prep-card" id="prep-card-4">
+                    <div class="small-icon-container prep-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                        </svg>
+                    </div>
+                    <h4 class="prep-card-title">Get enough sleep</h4>
+                    <button class="prep-btn"><!--TODO: there is going to be some JS, for now, keep empty-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="prep-card" id="prep-card-5">
+                    <div class="small-icon-container prep-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9H1.475ZM.879 8C-2.426 1.68 4.41-2 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.88Z"/>
+                        </svg>
+                    </div>
+                    <h4 class="prep-card-title">Exercise or physical activity</h4>
+                    <button class="prep-btn"><!--TODO: there is going to be some JS, for now, keep empty-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-container" id="section-4">
+        <div class="left-section" id="left-section-4">
+            <div id="section-4-head">
+                <h2 class="section-title" id="section-4-title">Emergency Contact</h2>
+                <p class="section-paragraph" id="section-4-p">Contact one of the contacts below if you or your family feel unwell and have similar symptoms such as Covid-19, make sure you also take care of yourself before reporting to us:</p>
+            </div>
+
+            <div id="emergency-cards">
+                <div class="emergency-card">
+                    <div class="emergency-card-head">
+                        <div class="emergency-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-outbound-fill card-icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </div>
+                        <h6 class="card-title emergency-card-title">Call</h6>
+                        <p class="card-text emergency-card-text">021.123.145.14</p>
+                    </div>
+                    <button class="emergency-btn">Call Now</button>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-card-head">
+                        <div class="emergency-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill card-icon" viewBox="0 0 16 16">
+                                <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                        </div>
+                        <h6 class="card-title emergency-card-title">Chat</h6>
+                        <p class="card-text emergency-card-text">021.123.145.14</p>
+                    </div>
+                    <button class="emergency-btn">Chat Now</button>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-card-head">
+                        <div class="emergency-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video-fill card-icon" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"/>
+                            </svg>
+                        </div>
+                        <h6 class="card-title emergency-card-title">Video Call</h6>
+                        <p class="card-text emergency-card-text">021.123.145.14</p>
+                    </div>
+                    <button class="emergency-btn">Video Call Now</button>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-card-head">
+                        <div class="emergency-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill card-icon" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                            </svg>
+                        </div>
+                        <h6 class="card-title emergency-card-title">Message</h6>
+                        <p class="card-text emergency-card-text">021.123.145.14</p>
+                    </div>
+                    <button class="emergency-btn">Message Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-section" id="right-section-4">
+            <img src="./img/section-4-img.jpg" alt="emergency doctor">
+        </div>
+    </section>
+
+    <footer>
+        <div id="top-footer">
+            <div>
+                <h4 id="footer-title">Vaccination</h4>
+                <p id="goal">our goal is to help the world free from the ongoing pandemic</p>
+            </div>
+            <div id="top-right-foo">
+                <div class="footer-div">
+                    <h6 class="footer-subtitle">About</h6>
+                    <a href="#" class="top-foo-a">About us</a>
+                    <a href="#" class="top-foo-a">Features</a>
+                    <a href="#" class="top-foo-a">News & Blog</a>
+                </div>
+                <div class="footer-div">
+                    <h6 class="footer-subtitle">Company</h6>
+                    <a href="#" class="top-foo-a">How we work?</a>
+                    <a href="#" class="top-foo-a">Capital</a>
+                    <a href="#" class="top-foo-a">Security</a>
+                </div>
+                <div class="footer-div">
+                    <h6 class="footer-subtitle">Support</h6>
+                    <a href="#" class="top-foo-a">FAQs</a>
+                    <a href="#" class="top-foo-a">Support Center</a>
+                    <a href="#" class="top-foo-a">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div id="rights-a">
+                <a class="copy-a" href="#">@2021 Vaccination. All rights reserved</a>
+            </div>           
+            <a id="terms-a" href="#" class="copy-a">Terms & Agreements</a>
+            <a id="privacy-a" href="#" class="copy-a">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
